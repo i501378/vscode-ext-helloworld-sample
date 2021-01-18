@@ -1,0 +1,26 @@
+{
+	"name": "helloworld-sample",
+	"description": "Minimal HelloWorld example for VS Code",
+	"version": "0.0.1",
+	"publisher": "SAP",
+	"repository": "https://github.wdf.sap.corp/devx-wing/helloworld-minimal-vscode-ext-sample",
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"activationEvents": [
+		"onCommand:extension.helloWorld"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.helloWorld",
+				"title": "Hello World"
+			}
+		]
+	},
+	"scripts": {},
+	"devDependencies": {
+		"@types/vscode": "^1.32.0"
+	}
+}
